@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    text-align: center;
+}
+body{
+    display: flex;
+    width:100vw;
+    height:100vh;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: url("img/pexels-vishnu-r-nair-1105666.jpg");
+    background-size: cover;
+
+}
+h1{
+    font-size: 3rem;
+    color:pink;
+}
+.container{
+    width:40vw;
+    height:85vh;
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(to right,rgb(234, 212, 183),rgb(149, 149, 201));
+}
+.cover{
+    width:50%;
+    height:50%;
+   
+}
+.cover img{
+   width:100%;
+   height:100%;
+   border-radius: 300px;
+    animation-name:ghumi;
+   animation-duration:4s; 
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+ @keyframes ghumi {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+} 
+
+
+
+.title{
+    width:70%;
+    height:20%;
+    font-size: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.progress-container{
+    width:400px;
+    height:1%;
+    border:2px solid black;
+  
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    width:40%;
+    height:10%;
+    border:none;
+}
+.buttons div{
+    width:30%;
+    height:100%;
+    border: none;
+}
+.prev img,.play img,.next img{
+    width:100%;
+    height:100%;
+    border: none;
+}
+#progress{
+    width:0px;
+    height:100%;
+    background-color: #000000;
+    
+   
+}
+
